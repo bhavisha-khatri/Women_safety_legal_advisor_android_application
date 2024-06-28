@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".UserProblemDetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewUPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Description: "
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Created At: "
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.3"
+            android:text="Comments:"
+            android:textSize="14sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/case_type"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.7"
+            android:text="Case Type:"
+            android:textSize="14sp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/entercomments"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.7"
+            android:padding="10dp"
+            android:hint="Enter Comments"
+            android:textColorHint="#ffffff"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/input_bg"
+            android:inputType="text|textMultiLine"
+            android:textSize="14sp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/c_submit"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Submit"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewUPD"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WomenSafetyLegalAdvisor"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdvocateProblemDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProblemDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvocateDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserResourcesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProblemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvocateProblemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvocateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvocateHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindAdvocateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".AdvocateRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserNewProblemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

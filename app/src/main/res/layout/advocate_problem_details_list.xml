@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/created_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created By:"
+        android:textColor="#606060"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created At:"
+        android:textColor="#606060"
+        android:textAlignment="textEnd"
+        android:textSize="13sp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/case_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Case Type:"
+            android:layout_weight="0.5"
+            android:textColor="#606060"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments: 10"
+            android:layout_weight="0.5"
+            android:textColor="#606060"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
